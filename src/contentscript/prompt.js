@@ -3,7 +3,7 @@ export function getSummaryPrompt(transcript) {
     .replace(/\n+/g, " ")
     .trim()}"\nVideo Transcript: "${truncateTranscript(transcript)
     .replace(/\n+/g, " ")
-    .trim()}"\nVideo Summary:`;
+    .trim()}"\nVideo Summary:`+ "請用繁體中文進行回應 ";
 }
 
 // Seems like 15,000 bytes is the limit for the prompt
